@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Art</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+
+<!-- Header -->
+<header>
+    <div class="top-header">
+        <div class="top-header">
+
+
+            <!-- Clickable home logo aligned to the left -->
+            <a href="index.html" class="logo">
+                <img src="images/favicon.png" alt="Home Logo" class="favicon-logo">
+            </a>
+
+
+            <div class="right-menu">
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
+                <button>Sign In</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Main Navigation Menu -->
+<div class="top-header">
+    <nav class="nav-bar">
+        <!-- Button 1 -->
+        <div class="menu-item">
+            <button>About</button>
+        </div>
+        <!-- Button 2 -->
+        <div class="menu-item">
+            <button>Academics</button>
+            <div class="dropdown-menu">
+                <a href="njit.html">NJIT (College)</a>
+                <a href="high-school.html">VPM (High School)</a>
+            </div>
+        </div>
+        <!-- Button 3 -->
+        <div class="menu-item">
+            <button>Experience</button>
+            <div class="dropdown-menu">
+                <a href="service.html">Service Industry</a>
+                <a href="retail.html">Retail Industry</a>
+            </div>
+        </div>
+        <!-- Button 4 -->
+        <div class="menu-item">
+            <button>Contact</button>
+        </div>
+        <!-- Button 5 -->
+        <div class="menu-item">
+            <button>Portfolio</button>
+            <div class="dropdown-menu">
+                <a href="menu-art.html">Menu Art</a>
+                <a href="traditional-art.html">Traditional Art</a>
+                <a href="coursework.html">Coursework</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<!-- Main Content -->
+<main>
+
+    </div>
+    <section class="photo-grid">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/art1.png" alt="Photo 1" onclick="function openLightbox(param) {
+
+                                }
+                                openLightbox(this)">
+            </div>
+            <div class="grid-item">
+                <img src="images/art2.png" alt="Photo 2" onclick="openLightbox(this)">
+            </div>
+            <div class="grid-item">
+                <img src="images/art3.png" alt="Photo 3" onclick="openLightbox(this)">
+            </div>
+            <div class="grid-item">
+                <img src="images/art4.jpg" alt="Photo 4" onclick="openLightbox(this)">
+            </div>
+            <div class="grid-item">
+                <img src="images/art5.png" alt="Photo 5" onclick="openLightbox(this)">
+            </div>
+            <div class="grid-item">
+                <img src="images/art6.jpeg" alt="Photo 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox" id="lightbox" onclick="function closeLightbox() {
+
+                    }
+                    closeLightbox()">
+        <img id="lightbox-img" src="" alt="Fullscreen Photo">
+    </div>
+    </section>
+    </div>
+    </div></section>
+    <script>
+        // Open the lightbox
+        function openLightbox(imageElement) {
+            // Get the lightbox container and fullscreen image element
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            // Set the source of the lightbox image to the clicked image's source
+            lightboxImg.src = imageElement.src;
+
+            // Show the lightbox
+            lightbox.style.display = "flex";
+        }
+
+        // Close the lightbox
+    </script>
+        <div class="footer-banner">
+            ©Copyright Rowan Schreiber 2025 |
+            <a href="terms-of-service.html">Terms of Service</a> |
+            <a href="privacy-statement.html">Privacy Statement</a>
+        </div>
+    </section>
+</main>
+</body>
+</html>
