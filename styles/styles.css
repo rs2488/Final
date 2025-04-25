@@ -1,0 +1,523 @@
+/* Navigation bar container */
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distributes buttons across the full width */
+    align-items: center; /* Vertically center-aligns buttons */
+    width: 100%; /* Makes the nav-bar span the full width of the screen */
+    background-color: #ffe6f7; /* Pastel pink background */
+    padding: 15px 0; /* Adds padding for vertical space */
+    font-family: 'Arial', sans-serif; /* Girly sans-serif font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle floating effect */
+    border-top: 2px solid #ffb3d9; /* Decorative top border */
+}
+
+
+/* Each individual menu-item container */
+.menu-item {
+    position: relative;
+    text-align: center;
+}
+
+
+/* Button styles */
+.menu-item button {
+    background-color: #ffb3d9; /* Light pastel pink */
+    border: none; /* Removes default border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adds space inside the button */
+    font-size: 16px; /* Slightly larger font size */
+    font-weight: bold; /* Makes the button text appear stronger */
+    border-radius: 30px; /* Fully rounded edges for a button */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+/* On hover, make buttons darker and pop */
+.menu-item button:hover {
+    background-color: #ff99c2; /* Darker pink shade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    transform: translateY(-2px); /* Gives the button a lifted effect */
+}
+
+
+/* Dropdown menu container */
+.menu-item .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the button */
+    left: 50%;
+    transform: translateX(-50%); /* Center the dropdown below the button */
+    background-color: #fff; /* White background for the dropdown */
+    border: 1px solid #ffb3d9; /* Pink border matching button color */
+    border-radius: 10px; /* Softer, rounded dropdown corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    z-index: 1000; /* Ensures dropdown is above other elements */
+}
+
+
+/* Dropdown items */
+.menu-item .dropdown-menu a {
+    display: block;
+    text-decoration: none; /* Removes underline */
+    color: #ff66a3; /* Girly pink shade for links */
+    font-size: 14px; /* Slightly smaller text */
+    padding: 10px 20px; /* Adds spacing inside the dropdown items */
+    transition: all 0.3s ease; /* Adds hover animation for dropdown links */
+}
+
+
+.menu-item .dropdown-menu a:hover {
+    background-color: #ffe6f7; /* Light pink hover effect */
+    color: #333; /* Switch to dark text for visibility */
+    border-radius: 5px; /* Adds a soft rounded effect on hover */
+}
+
+
+/* Show dropdown on hover */
+.menu-item:hover .dropdown-menu {
+    display: block; /* Reveal dropdown on hover */
+}
+.jumbotron {
+    width: 100%; /* Full-width container to stretch across browser */
+    overflow: hidden; /* Ensures no stray content outside the container */
+}
+
+
+.jumbotron img {
+    width: 100%; /* Fills the entire width of the page */
+    height: auto; /* Maintains the aspect ratio dynamically */
+    display: block; /* Prevents gaps beneath the image caused by inline behavior */
+}
+
+
+/* Favicon/logo styling */
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+.favicon-logo {
+    display: block;
+    height: 32px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    max-width: 50px; /* Optional upper limit size */
+}
+
+
+/* Header layout and alignment */
+.top-header {
+    display: flex;             /* Flexbox for horizontal layout */
+    align-items: center;       /* Vertically align items */
+    justify-content: space-between; /* Space logo and right-menu apart */
+    padding: 10px 20px;        /* Add padding around header */
+    background-color: #f8f9fa; /* Optional background color for clarity */
+}
+
+
+/* Styling for search bar and sign-in button on the right */
+.right-menu {
+    display: flex;       /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center items */
+    gap: 10px;           /* Add space between the input and button */
+}
+
+
+/* Search bar style */
+input[type="text"] {
+    padding: 5px;    /* Add padding inside the input box */
+    font-size: 14px; /* Adjust text size */
+    border-radius: 4px; /* Optional: rounded corners */
+    border: 1px solid #ccc; /* Light border for input box */
+}
+
+
+/* Sign-in button style */
+button {
+    padding: 5px 10px;      /* Add some padding inside the button */
+    font-size: 14px;        /* Adjust text size */
+    border: none;           /* Remove border */
+    background-color: #007bff; /* Blue background */
+    color: white;           /* White text color */
+    border-radius: 4px;     /* Optional rounded corners */
+    cursor: pointer;        /* Show pointer icon on hover */
+}
+
+
+button:hover {
+    background-color: #ff66a3; /* Darker pink on hover */
+}
+
+
+/* Favicon/logo styling */
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+.favicon-logo {
+    display: block;
+    height: 32px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    max-width: 50px; /* Optional upper limit size */
+}
+
+
+/* Header layout and alignment */
+.top-header {
+    display: flex;             /* Flexbox for horizontal layout */
+    align-items: center;       /* Vertically align items */
+    justify-content: space-between; /* Space logo and right-menu apart */
+    padding: 10px 20px;        /* Add padding around header */
+    background-color: #f8f9fa; /* Optional background color for clarity */
+}
+
+
+/* Styling for search bar and sign-in button on the right */
+.right-menu {
+    display: flex;       /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center items */
+    gap: 10px;           /* Add space between the input and button */
+}
+
+
+/* Search bar style */
+input[type="text"] {
+    padding: 5px;    /* Add padding inside the input box */
+    font-size: 14px; /* Adjust text size */
+    border-radius: 4px; /* Optional: rounded corners */
+    border: 1px solid #ccc; /* Light border for input box */
+}
+
+
+/* Sign-in button style */
+button {
+    padding: 5px 10px;      /* Add some padding inside the button */
+    font-size: 14px;        /* Adjust text size */
+    border: none;           /* Remove border */
+    background-color: #ff66a3; /* Dark pink background */
+    color: white;           /* White text color */
+    border-radius: 4px;     /* Optional rounded corners */
+    cursor: pointer;        /* Show pointer icon on hover */
+}
+
+
+button:hover {
+    background-color: #ff66a3; /* Darker pink on hover */
+}
+
+
+.card {
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the container clears the float */
+}
+
+
+.card-image {
+    float: left; /* Floats the image to the left of the parent */
+    width: 150px; /* Resizes the image width */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 20px; /* Adds space between the image and the text */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+
+.card-content {
+    overflow: hidden; /* Ensures the text content does not overlap the image */
+}
+
+
+.card-content p {
+    margin: 0; /* Resets default margins for cleaner layout */
+    line-height: 1.6; /* Optional: Adjusts line spacing for readability */
+}
+
+/* Footer Style */
+.footer-banner {
+    background-color: #ffc0cb; /* Girly pink color */
+    color: white; /* White font color */
+    text-align: center; /* Center the text */
+    padding: 15px 0; /* Padding for better spacing */
+    border-radius: 10px 10px 0 0; /* Soft edges on the top */
+    font-size: 14px; /* Slightly smaller, elegant font */
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual depth */
+}
+
+.footer-banner a {
+    color: white; /* Keep links in white font */
+    text-decoration: none; /* Remove underlines for links */
+    margin: 0 10px; /* Spacing between links */
+}
+
+.footer-banner a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Photo Grid Section */
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space between the navigation bar and grid */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger images */
+    gap: 30px; /* Increased gap to accommodate larger photos */
+    width: 90%; /* Increase the overall width of the grid */
+    max-width: 1400px; /* Ensure the grid doesn't stretch too much on large screens */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* Add rounded edges for aesthetic */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow for larger items */
+}
+
+.grid-item img {
+    width: 100%; /* Fully responsive image */
+    height: auto; /* Keeps the image's aspect ratio */
+    display: block; /* Prevent spacing issues below images */
+    object-fit: cover; /* Makes the image fill the container */
+    border-radius: inherit; /* Matches the container's border radius */
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 25px; /* Slightly smaller gaps on narrower screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for mobile devices */
+    }
+}
+
+/* Lightbox Overlay */
+.lightbox {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's above all other elements */
+}
+
+.lightbox img {
+    max-width: 90%; /* Ensure the image doesn't overflow the screen */
+    max-height: 90%; /* Ensure the image doesn't overflow the screen */
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.lightbox:active {
+    cursor: zoom-out; /* Zoom out cursor when clicking the overlay */
+}
+
+/* Add Transition to the Grid Images (Optional Style) */
+.grid-item img {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer; /* Cursor changes to pointer when hovering */
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Contact Me Section */
+.contact-me {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto; /* Center aligns the section */
+    padding: 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.contact-me h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 15px; /* Add spacing between fields */
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Align labels and inputs vertically */
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make input fields take full width */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+input:focus {
+    border-color: #007BFF; /* Highlight input field on focus */
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add slight glow */
+}
+
+button.submit-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+button.submit-button:focus {
+    outline: none;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 480px) {
+    .contact-me {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Sign-In Section */
+.sign-in-section {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Heading */
+.sign-in-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Form Input Fields */
+.form-group label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn’t overflow */
+}
+
+.form-group input:focus {
+    border-color: #007BFF; /* Focus blue border */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Slight glow */
+    outline: none;
+}
+
+/* Sign-In Button */
+.sign-in-button {
+    background: #007BFF; /* Blue background */
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+.sign-in-button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .sign-in-section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}

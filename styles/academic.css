@@ -1,0 +1,40 @@
+/* Styles for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light background for better readability */
+    color: #333; /* Text color */
+}
+
+/* Styling for the image */
+img {
+    float: left; /* Floats the image to the left */
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Spacing below image for better alignment */
+    border-radius: 8px; /* Optional: Rounded corners */
+    width: 300px; /* Adjusts the width of the image */
+    height: auto; /* Maintains aspect ratio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow under the image */
+}
+
+/* Styling for the <h1> tag */
+h1 {
+    font-size: 2.5rem;
+    color: #2e86c1; /* Blue headline color */
+    text-decoration: underline; /* Underlines the heading */
+    margin-bottom: 15px;
+}
+
+/* Styling for the <h2> elements */
+h2 {
+    font-size: 1.2rem;
+    color: #555; /* A softer black color for better readability */
+    margin-top: 10px;
+}
+
+/* Optional: Add padding to the body for a cleaner layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* Centers everything horizontally */
+}
